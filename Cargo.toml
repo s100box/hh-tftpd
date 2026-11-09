@@ -1,0 +1,19 @@
+[package]
+name = "hh-tftpd"
+version = "0.1.0"
+edition = "2021"
+description = "Standalone TFTP server for FPGA and embedded board bring-up"
+authors = ["Howard M. Harte"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/hharte/hh-tftpd"
+readme = "README.md"
+publish = false
+
+[[bin]]
+name = "tftpd"
+path = "src/main.rs"
+
+[dependencies]
+
+[profile.release]
+opt-level = 2
